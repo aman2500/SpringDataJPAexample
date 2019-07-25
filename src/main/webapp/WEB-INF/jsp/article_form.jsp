@@ -16,17 +16,29 @@
 <body>
 	<div class="container">
 		<spring:url value="/article/saveArticle" var="saveURL" />
-		<h2>Article</h2>
+		<h2>Enter New Lead</h2>
 		<form:form modelAttribute="articleForm" method="post"
 			action="${saveURL }" cssClass="form">
 			<form:hidden path="id" />
 			<div class="form-group">
-				<label>Title</label>
+				<label>Name</label>
 				<form:input path="title" cssClass="form-control" id="title" />
 			</div>
 			<div class="form-group">
-				<label>Category</label>
+				<label>Phone Number</label>
 				<form:input path="category" cssClass="form-control" id="category" />
+			</div>
+			<div class="form-group">
+				<label>Email</label>
+				<form:input path="email" cssClass="form-control" id="email" />
+			</div>
+			<div class="form-group">
+				<label>Location</label>
+				<form:input path="location" cssClass="form-control" id="location" />
+			</div>
+			<div class="form-group">
+				<label>Description</label>
+				<form:input path="description" cssClass="form-control" id="description" />
 			</div>
 			<button type="submit" class="btn btn-primary">Save</button>
 		</form:form>

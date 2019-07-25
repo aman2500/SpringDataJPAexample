@@ -19,8 +19,11 @@
 		<table class="table table-striped">
 			<thead>
 				<th scope="row">#ID</th>
-				<th scope="row">Title</th>
-				<th scope="row">Category</th>
+				<th scope="row">Name</th>
+				<th scope="row">Phone Number</th>
+				<th scope="row">Email Address</th>
+				<th scope="row">Location</th>
+				<th scope="row">Description</th>
 				<th scope="row">Update</th>
 				<th scope="row">Delete</th>
 			</thead>
@@ -30,6 +33,9 @@
 						<td>${article.id }</td>
 						<td>${article.title }</td>
 						<td>${article.category }</td>
+						<td>${article.email }</td>
+						<td>${article.location }</td>
+						<td>${article.description }</td>
 						<td><spring:url value="/article/updateArticle/${article.id }"
 								var="updateURL" /> <a class="btn btn-primary"
 							href="${updateURL }" role="button">Update</a></td>
