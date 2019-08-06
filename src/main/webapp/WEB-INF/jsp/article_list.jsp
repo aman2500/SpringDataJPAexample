@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Article List</title>
+<title>Leads List</title>
 <link href="../../webjars/bootstrap/4.0.0/css/bootstrap.min.css"
 	rel="stylesheet" />
 <script src="../../webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
 	<div class="container">
-		<h2>Article List</h2>
+		<h2>All Current Leads</h2>
 		<table class="table table-striped">
 			<thead>
 				<th scope="row">#ID</th>
